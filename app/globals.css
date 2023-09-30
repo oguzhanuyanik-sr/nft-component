@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-500 text-light-100 min-h-screen flex justify-center items-center container overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .card-image {
+    @apply relative;
+  }
+
+  .card-image:hover > div {
+    @apply bg-dark-100/50 h-full w-full rounded-lg transition-all flex justify-center items-center absolute left-0 top-0 text-5xl;
+  }
+}

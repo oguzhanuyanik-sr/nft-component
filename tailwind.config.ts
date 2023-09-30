@@ -8,30 +8,43 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      screens: { sm: '640px', md: '768px', lg: '1024px', xl: '1280px' },
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+      },
       colors: {
-        blue: {
+        dark: {
           100: '#00FFF8',
           200: '#8BACD9',
           300: '#2E405A',
           400: '#15263F',
           500: '#0D192C',
+          600: '#000000',
         },
-        white: {
+        light: {
           100: '#FFFFFF',
         },
-        black: {
-          100: '#000000',
-        },
+      },
+      opacity: {
+        50: '0.50',
       },
       fontSize: {},
       fontFamily: {},
-      boxShadow: {},
+      boxShadow: {
+        card: '0px 25px 50px 0px rgba(0, 0, 0, 0.10)',
+      },
       backgroundImage: {},
       container: {
         center: true,
         padding: '1rem',
-        screens: { sm: '640px', md: '768px', lg: '1024px', xl: '1280px' },
+        screens: {
+          sm: '640px',
+          md: '768px',
+          lg: '1024px',
+          xl: '1280px',
+        },
       },
     },
   },
